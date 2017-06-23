@@ -194,6 +194,25 @@ void TREEzigD(TREE *root){
 	(*root)->right = tmp;
 }
 
+int TREEhasLeft(TREE root){
+
+    if(root->left == NULL){
+        return 0;
+    } else {
+        return 1;
+    }
+}
+
+int TREEhasRight(TREE root){
+
+    if(root->right == NULL){
+        return 0;
+    } else {
+        return 1;
+    }
+}
+
+
 
 
 

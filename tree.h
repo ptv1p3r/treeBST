@@ -47,3 +47,5 @@ void search_remove_node_BST(int item_to_find, TREE * root);
 
 void TREEzigE(TREE *root);
 void TREEzigD(TREE *root);
+int TREEhasLeft(TREE root);
+int TREEhasRight(TREE root);
