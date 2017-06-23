@@ -14,8 +14,6 @@ int main() {
 	fprintf(file_ptr, "\n %d %d translate \n", CANVAS_WIDTH /2, CANVAS_HEIGHT -100 );
 
 
-
-
 	ITEM it1 = create_item(25, 'a');
 	ITEM it2 = create_item(20, 'b');
 	ITEM it3 = create_item(27, 'c');
@@ -41,12 +39,15 @@ int main() {
 	print_tree_in_order(root); printf("\n");
 	print_tree_post_order(root); printf("\n");
 
-	search_remove_node_BST(25, &root);
+	//search_remove_node_BST(25, &root);
 
-
+	//TREEzigE(&root);  //rotate left
+	//TREEzigD(&root);  //rotate right
 
 	 // to draw a tree given its root use
-	mirror_tree(&root);draw_tree(file_ptr, root, (float)get_tree_height(root) + 2, 1, 0 , 0, 0 );
+	mirror_tree(&root);
+
+	draw_tree(file_ptr, root, (float)get_tree_height(root) + 2, 1, 0 , 0, 0 );
 	fprintf(file_ptr, "\nshowpage\n");
 	fclose(file_ptr);
 
