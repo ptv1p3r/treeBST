@@ -179,6 +179,12 @@ void mirror_tree(TREE *root)
 	}
 }
 
+void TREEzigE(TREE *root){
+	TREE tmp = *root;
+	*root = get_right(tmp);
+	tmp->right = get_left(*root);
+	(*root)->left = tmp;
+}
 
 
 

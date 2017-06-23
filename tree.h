@@ -44,5 +44,5 @@ void insert_BST(TREE node_to_insert, TREE *root);
 void remove_node_BST(TREE * root);
 void search_remove_node_BST(int item_to_find, TREE * root);
 
-void rotate_left(TREE * root);
+void TREEzigE(TREE *root);
 
