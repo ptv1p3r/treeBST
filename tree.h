@@ -36,6 +36,7 @@ void print_tree_post_order(TREE tree);
 void delete_node(TREE * node);
 
 
+
 // BST functions
 
 TREE get_min_BST(TREE root);
@@ -45,4 +46,4 @@ void remove_node_BST(TREE * root);
 void search_remove_node_BST(int item_to_find, TREE * root);
 
 void TREEzigE(TREE *root);
-
+void TREEzigD(TREE *root);

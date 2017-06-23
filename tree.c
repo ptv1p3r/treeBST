@@ -186,6 +186,15 @@ void TREEzigE(TREE *root){
 	(*root)->left = tmp;
 }
 
+void TREEzigD(TREE *root){
+
+	TREE tmp = *root;
+	*root = get_left(tmp);
+	tmp->left = get_right(*root);
+	(*root)->right = tmp;
+}
+
+
 
 
 
