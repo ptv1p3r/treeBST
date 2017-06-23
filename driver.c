@@ -5,7 +5,7 @@
 
 int main() {
 
-	const char * file_path = "out.eps";
+	const char * file_path = "../out.eps";
 
 
 	FILE * file_ptr = fopen(file_path, "w+");
